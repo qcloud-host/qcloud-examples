@@ -1,0 +1,12 @@
+{
+  "model": "example/chat-model",
+  "requestId": "f9bdbeb6-7320-4a23-843d-b7033bd3b28f",
+  "deploymentId": "cd43d393-9d75-4ac9-930a-c5e111eb11d6",
+  "models": {"object":"list","data":[{"id":"example/chat-model","capabilities":["chat"],"pricing":{"prompt":0.001,"completion":0.002}}]},
+  "completion": {"id":"chatcmpl-offline","object":"chat.completion","created":1,"model":"example/chat-model","choices":[{"index":0,"message":{"role":"assistant","content":"Hello, κόσμε."},"finish_reason":"stop"}],"usage":{"prompt_tokens":2,"completion_tokens":3,"total_tokens":5}},
+  "generationModel": {"id":"example/image-model","object":"generation.model","display_name":"Offline fixture","category":"image","description":"Test fixture, not a live model","status":"unavailable","available":false,"transport":"queue","queued_available":false,"schema_available":true,"reference_status":"current","reference_stale":false,"license":null,"updated_at":"2026-01-01T00:00:00Z","schema_url":"https://offline.invalid/schema"},
+  "generationList": {"object":"list","data":[],"has_more":false,"next_cursor":null,"catalog":{"stale":false,"total":0}},
+  "generationJob": {"data":{"object":"generation.job","id":"d562be58-77be-4f57-8636-4f47fdf27baa","model":"example/image-model","status":"queued","created_at":"2026-01-01T00:00:00Z","updated_at":"2026-01-01T00:00:00Z","completed_at":null,"deadline_at":"2026-01-01T00:05:00Z","cancel_requested":false,"error":null,"billing":{"mode":"metered","status":"pending","currency":"USD","markup_multiplier":1,"cost_usd":null},"result_url":null}},
+  "queueCatalog": {"stage":"draft_preview","runtime_available":false,"creation_available":false,"profiles":[],"unsupported":[]},
+  "queueCapabilities": {"stage":"inactive","execution_available":false,"billing_available":false}
+}

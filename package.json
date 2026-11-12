@@ -1,0 +1,19 @@
+{
+  "name": "qcloud-examples",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Small, tested QCloud integration examples for Python and TypeScript.",
+  "scripts": {
+    "prepare:sdk": "node scripts/prepare-sdk.mjs",
+    "example": "tsx typescript/run.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test typescript/tests/*.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {"qcloud-ai": "file:.vendor/qcloud-typescript"},
+  "devDependencies": {"@types/node": "22.14.0", "tsx": "4.21.0", "typescript": "5.8.3"},
+  "engines": {"node": ">=20"},
+  "license": "MIT",
+  "overrides": {"esbuild": "0.28.2"}
+}

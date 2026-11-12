@@ -1,0 +1,1 @@
+qcloud-ai @ git+https://github.com/qcloud-host/qcloud-python.git@beedeb49279588c0d74392f896c2504d9a7dd12a
