@@ -1,4 +1,4 @@
 {
   "typescript": {"repository": "https://github.com/qcloud-host/qcloud-typescript.git", "revision": "56a4e1f38f8633f83195f1dceff3c438d3439378"},
-  "python": {"repository": "https://github.com/qcloud-host/qcloud-python.git", "revision": "5be3d55e51f920c58a36647f01a3d600e8cd557c"}
+  "python": {"repository": "https://github.com/qcloud-host/qcloud-python.git", "revision": "5abef23f8937669da74211593e54a3199dd8215f"}
 }

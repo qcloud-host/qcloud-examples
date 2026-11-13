@@ -2,7 +2,7 @@
 
 Small, runnable Python and TypeScript examples for building with [QCloud Host](https://qcloud.host). Start with model discovery, make a chat request, then stream the response. Separate service examples show how to inspect capabilities and handle access-gated generation and dedicated inference.
 
-These examples use the official [Python SDK](https://github.com/qcloud-host/qcloud-python) and [TypeScript SDK](https://github.com/qcloud-host/qcloud-typescript), installed from pinned public source commits. They do not assume that packages are published to PyPI or npm. Exact revisions are in [sdk-sources.json](sdk-sources.json).
+These examples use the official [Python SDK from PyPI](https://pypi.org/project/qcloud-ai/0.4.0/) and build the [TypeScript SDK](https://github.com/qcloud-host/qcloud-typescript) from its pinned GitHub commit. Exact source revisions are in [sdk-sources.json](sdk-sources.json).
 
 | Example | TypeScript | Python | What it demonstrates |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ These examples use the official [Python SDK](https://github.com/qcloud-host/qclo
 ## Requirements
 
 - Node.js 20 or later for TypeScript, or Python 3.10 or later for Python.
-- Git and an internet connection to install the SDK and dependencies.
+- An internet connection to install dependencies. The TypeScript setup also needs Git.
 - A QCloud API key only when running against your workspace. Tests require no key and send no API traffic.
 
 Install either language, or both. Commands below run from the repository root.
@@ -51,7 +51,7 @@ export PYTHONPATH=python
 $env:PYTHONPATH = "python"
 ```
 
-Then install the SDK from its pinned source revision:
+Then install the pinned SDK release from PyPI:
 
 ```sh
 python -m pip install -r requirements.txt

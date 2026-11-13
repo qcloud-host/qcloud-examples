@@ -11,6 +11,6 @@ Keep examples small enough to read in one sitting and useful outside this reposi
 
 Do not add credentials, customer inputs, generated assets or local intent files. Do not silently retry potentially dispatched paid requests. For generation recovery, keep the saved UUID and identical body together.
 
-When updating SDK revisions, change `sdk-sources.json` and the Python URL in `requirements.txt`, rebuild the source and regenerate the Node lockfile, then rerun both test suites. Explain changed API assumptions in the README. Switch to registry installation only after official package publication is verified.
+When updating an SDK, record the source revision in `sdk-sources.json`. For Python, pin the corresponding PyPI release in `requirements.txt`. For TypeScript, rebuild the pinned source and regenerate the Node lockfile if dependencies changed. Rerun both test suites and explain changed API assumptions in the README.
 
 Use GitHub issues for reproducible code problems. Keep account questions and security reports private; see SECURITY.md.
