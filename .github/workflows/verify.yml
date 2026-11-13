@@ -31,8 +31,6 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
           cache: pip
-      - name: Build the pinned TypeScript SDK
-        run: npm run prepare:sdk
       - run: npm ci
       - run: npm run check
       - run: python -m pip install -r requirements.txt

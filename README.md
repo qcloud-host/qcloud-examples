@@ -2,7 +2,7 @@
 
 Small, runnable Python and TypeScript examples for building with [QCloud Host](https://qcloud.host). Start with model discovery, make a chat request, then stream the response. Separate service examples show how to inspect capabilities and handle access-gated generation and dedicated inference.
 
-These examples use the official [Python SDK from PyPI](https://pypi.org/project/qcloud-ai/0.4.0/) and build the [TypeScript SDK](https://github.com/qcloud-host/qcloud-typescript) from its pinned GitHub commit. Exact source revisions are in [sdk-sources.json](sdk-sources.json).
+These examples use the [Python SDK from PyPI](https://pypi.org/project/qcloud-ai/0.4.0/) and the [TypeScript SDK from GitHub Releases](https://github.com/qcloud-host/qcloud-typescript/releases/tag/v0.4.0). Both use version 0.4.0. Exact source revisions are in [sdk-sources.json](sdk-sources.json).
 
 | Example | TypeScript | Python | What it demonstrates |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ These examples use the official [Python SDK from PyPI](https://pypi.org/project/
 ## Requirements
 
 - Node.js 20 or later for TypeScript, or Python 3.10 or later for Python.
-- An internet connection to install dependencies. The TypeScript setup also needs Git.
+- An internet connection to install dependencies.
 - A QCloud API key only when running against your workspace. Tests require no key and send no API traffic.
 
 Install either language, or both. Commands below run from the repository root.
@@ -24,12 +24,11 @@ Install either language, or both. Commands below run from the repository root.
 ## TypeScript setup
 
 ```sh
-npm run prepare:sdk
 npm ci
 npm run example -- help
 ```
 
-The preparation script checks out and builds the pinned SDK in `.vendor/qcloud-typescript`. It stops if that checkout has local edits. `npm ci` then links the built SDK into this project; no registry package named `qcloud-ai` is fetched.
+`npm ci` downloads the tagged SDK archive and verifies it against the integrity hash in `package-lock.json`.
 
 ## Python setup
 
